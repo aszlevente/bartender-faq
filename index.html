@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bartender Game FAQ</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin: auto;
+            margin-bottom: 60px;
+            margin-top: 20px;
+        }
+
+        .redacted {
+            background-color: black;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .a {
+            margin-bottom: 30px;
+            margin-left: 10px;
+        }
+
+        .q {
+            margin-bottom: 15px;
+            margin-left: 10px;
+        }
+
+        .stickbottom {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: lightgray;
+            margin: 0;
+            text-align: center;
+        }
+    </style>
+
+    <h1>Bartender Game FAQ</h1>
+
+    <p class="q"><b>Q:</b> Mikor készül el végre a játék?</p>
+    <p class="a"><b>A:</b> Hát nem most az biztos.</p>
+    <p class="q"><b>Q:</b> Na de most komolyan, mikor készül el végre a játék?</p>
+    <p class="a"><b>A:</b> Ha kedvem van, csinálom, ha nincs, akkor nem.</p>
+    <p class="q"><b>Q:</b> Honnan tudhatom meg ha elkészül?</p>
+    <p class="a"><b>A:</b> Erről a weboldalról természetesen, de garantálom, hogy Ön lesz az első, akinek személyesen elmondom.</p>
+    <p class="q"><b>Q:</b> Tulajdonképpen mi is a játék neve?</p>
+    <p class="a"><b>A:</b> Nem más, mint: <span class="redacted">Azt hitted</span></p>
+    <p class="q"><b>Q:</b> Hol lehet jelenkezni a béta-teszter programba?</p>
+    <p class="a"><b>A:</b> Ezen a linken: <a href="https://youtu.be/dQw4w9WgXcQ">https://bartender.hu/jelentkezz</a></p>
+
+    <div class="stickbottom">
+        <p>Utoljára frissítve: <span id="current_date"></span></p>
+    </div>
+
+    <script>
+        date = new Date();
+        year = date.getFullYear();
+        month = date.getMonth() + 1;
+        day = date.getDate();
+        document.getElementById("current_date").innerHTML = year + "/" + month + "/" + day;
+    </script>
+</body>
