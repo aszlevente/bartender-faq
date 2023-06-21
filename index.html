@@ -10,13 +10,26 @@
             margin: 0;
             padding: 0;
         }
-
-        h1 {
+		
+		body {
+			background-color: #0B2447;
+			color: #A5D7E8;
+		}
+		
+		a {
+			color: white;
+		}
+		
+        h1, h2 {
             text-align: center;
             margin: auto;
-            margin-bottom: 60px;
             margin-top: 20px;
+			color: white;
         }
+
+		h2 {
+            margin-bottom: 60px;
+		}
 
         .redacted {
             background-color: black;
@@ -26,6 +39,7 @@
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
+			color: black;
         }
 
         .a {
@@ -35,31 +49,139 @@
 
         .q {
             margin-bottom: 15px;
-            margin-left: 10px;
         }
-
-        .stickbottom {
+		
+		.blocks {
+			position: relative;
+			height: 27.5rem;
+		}
+		
+		.qanda {
+			background-color: #19376D;
+			padding: 10px;
+			border-radius: 10px;
+			display: inline-block;
+			padding-bottom: 0;
+			position: absolute;
+			left: 80px;
+			top: 0;
+			height: 100%;
+			box-sizing: border-box;
+		}
+		
+		.rsidediv {
+			background-color: #19376D;
+			padding: 10px;
+			border-radius: 10px;
+			display: inline-block;
+			position: absolute;
+			right: 80px;
+			top: 0;
+		}
+		
+		.rsidediv2 {
+			background-color: #19376D;
+			padding: 10px;
+			border-radius: 10px;
+			display: inline-block;
+			position: absolute;
+			right: 80px;
+			/*top: 160px;*/
+			bottom: 0px;
+			
+			font-size: 1.2rem;
+		}
+		
+		.blocks div {
+			width: 40rem;
+		}
+		
+		.rsidediv2 p:first-child::first-letter {
+			initial-letter: 2;
+			margin-right: .5rem;
+		}
+        
+		.kop {
+			text-decoration: none;
+		}
+		
+		.stickbottom {
             position: absolute;
             bottom: 0;
             width: 100%;
-            background-color: lightgray;
+            /*background-color: lightgray;*/
             margin: 0;
             text-align: center;
         }
+		
+		blockquote {
+			font-family: Georgia, serif;
+			font-size: 18px;
+			font-style: italic;
+			width: 500px;
+			margin: 0.25em 0;
+			padding: 0.35em 40px;
+			line-height: 1.45;
+			position: relative;
+		}
+
+		blockquote:before {
+			display: block;
+			padding-left: 10px;
+			content: "\201C";
+			font-size: 80px;
+			position: absolute;
+			left: -20px;
+			top: -20px;
+			color: #7a7a7a;
+		}
+
+		blockquote cite {
+			color: #999999;
+			font-size: 14px;
+			display: block;
+			margin-top: 5px;
+		}
+
+		blockquote cite:before {
+			content: "\2014 \2009";
+		}
     </style>
 
     <h1>Bartender Game FAQ</h1>
-
-    <p class="q"><b>Q:</b> Mikor készül el végre a játék?</p>
-    <p class="a"><b>A:</b> Hát nem most az biztos.</p>
-    <p class="q"><b>Q:</b> Na de most komolyan, mikor készül el végre a játék?</p>
-    <p class="a"><b>A:</b> Ha kedvem van, csinálom, ha nincs, akkor nem.</p>
-    <p class="q"><b>Q:</b> Honnan tudhatom meg ha elkészül?</p>
-    <p class="a"><b>A:</b> Erről a weboldalról természetesen, de garantálom, hogy Ön lesz az első, akinek személyesen elmondom.</p>
-    <p class="q"><b>Q:</b> Tulajdonképpen mi is a játék neve?</p>
-    <p class="a"><b>A:</b> Nem más, mint: <span class="redacted">Azt hitted</span></p>
-    <p class="q"><b>Q:</b> Hol lehet jelenkezni a béta-teszter programba?</p>
-    <p class="a"><b>A:</b> Ezen a linken: <a href="https://youtu.be/dQw4w9WgXcQ">https://bartender.hu/jelentkezz</a></p>
+	<h2>v3.0</h2>
+	
+	<div class="blocks">
+		<div class="qanda">
+			<p class="q"><b>Q:</b> Mikor készül el végre a játék?</p>
+			<p class="a"><b>A:</b> Hát nem most az biztos.</p>
+			<p class="q"><b>Q:</b> Na de most komolyan, mikor készül el végre a játék?</p>
+			<p class="a"><b>A:</b> Ha kedvem van, csinálom, ha nincs, akkor nem.</p>
+			<p class="q"><b>Q:</b> Honnan tudhatom meg ha elkészül?</p>
+			<p class="a"><b>A:</b> Erről a weboldalról természetesen, de garantálom, hogy Ön lesz az első, akinek személyesen elmondom.</p>
+			<p class="q"><b>Q:</b> Tulajdonképpen mi is a játék neve?</p>
+			<p class="a"><b>A:</b> Nem más, mint: <span class="redacted">Azt hitted</span></p>
+			<p class="q"><b>Q:</b> Hol lehet jelenkezni a béta-teszter programba?</p>
+			<p class="a"><b>A:</b> Ezen a linken: <a href="https://aszlevente.github.io/goofy-convo/" target="about_blank">https://bartender.hu/jelentkezz</a></p>
+		</div>
+		
+		<div class="rsidediv">
+			<blockquote>
+				Legjobb játék valaha, ehhez nem férhet kétség. Bár tudnánk ki a rejtélyes géniusz a projekt mögött!
+				<cite>IGN Magyarország</cite>
+			</blockquote>
+		</div>
+		
+		<div class="rsidediv2">
+			<p>A játék készítése a harmadik fázisába érkezett. Két kidobott koncepció és számtalan ötlettelen fejvakarással eltöltött óra után büszkén jelenthetem ki, 
+			hogy még mindig nagyon sok munka van hátra. Az igazi kihívást nem a játékkészítés technikai részletei okozzák, hanem az alatta megbúvó kreatív munka, 
+			amely sajnos diktálja a programozói munka haladtát is. Ennek fényében úgy döntöttem, 
+			hogy mind a munkafolyamatok felgyorsítása, mind a közönség nagyobb szintű bevonása érdekében megnyitom a 
+			<a href="https://drive.google.com/drive/folders/1k2SH-oNw05aRq5TZ9fkDiXeaTuOLCkBW?usp=sharing" target="_blank" class="kop">Közösségi Ötletportált</a>. 
+			Ezen a helyen megtalálható lesz néhány az eddig elkészült művekből. Ugyanerre a helyre várjuk a közösség által készített zenéket, rajzokat, ötleteket, stb. 
+			A legjobb ötletek/művek bekerülnek a játékba, és a készítők a hozzájárulás mértékében meg lesznek említve a stáblistában.</p>
+		</div>
+	</div>
 
     <div class="stickbottom">
         <p>Utoljára frissítve: <span id="current_date"></span></p>
